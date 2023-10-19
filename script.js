@@ -1,36 +1,19 @@
-// 1
-// const button = document.querySelector(".button");
-// const backdrop = document.querySelector(".backdrop");
-// const modal = document.querySelector(".modal");
-// const close = document.querySelector(".button-close");
 
-// function backdropShow () {
-//     backdrop.classList.toggle("is-hidden");
-// };
-// button.addEventListener("click", backdropShow);
-
-// close.addEventListener("click", backdropShow);
-// backdrop.addEventListener("click", (event) => {
-//     console.log(event.target.dataset)
-//     if (!event.target.dataset.data-modal) {
-//         backdropShow()
-//     };
-// });
-// 1 const openModalBtn = document.querySelector('[data-action="open-modal"]');
-// const backdrop = document.querySelector(".backdrop");
-// const closeModalBtn = document.querySelector('[data-action="close-modal"]');
-// openModalBtn.addEventListener("click", () => {
-//   document.body.classList.toggle("show-modal");
-// });
-// closeModalBtn.addEventListener("click", () => {
-//     document.body.classList.toggle("show-modal");
-// });
-// backdrop.addEventListener("click", (e) => {
-//     console.log(!e.target.dataset.action)
-//     if (!e.target.dataset.action) {
-//         document.body.classList.toggle("show-modal");
-//     }
-// });
+const openModalBtn = document.querySelector('[data-action="open-modal"]');
+const backdrop = document.querySelector(".backdrop");
+const closeModalBtn = document.querySelector('[data-action="close-modal"]');
+openModalBtn.addEventListener("click", () => {
+  document.body.classList.toggle("show-modal");
+});
+closeModalBtn.addEventListener("click", () => {
+    document.body.classList.toggle("show-modal");
+});
+backdrop.addEventListener("click", (e) => {
+    console.log(!e.target.dataset.action)
+    if (!e.target.dataset.action) {
+        document.body.classList.toggle("show-modal");
+    }
+});
 
 
 
